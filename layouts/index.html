@@ -1,18 +1,14 @@
 {{ define "main" }}
 {{ $s := .Site.Data.site }}
-
 <div class="wrapper">
   <header>
     <h1>{{ $s.name }}</h1>
     <p></p>
     <hr>
-
     {{ range $s.links }}
       <p class="contactinfo"><a href="{{ .href }}">{{ .label }}</a></p>
     {{ end }}
-
     <img src="{{ $s.photo }}" alt="Photo" class="profile">
-
     <br>
     {{ $s.position }}
     <br>
@@ -22,24 +18,18 @@
     |
     <a href="mailto:{{ $s.email }}">Email</a>
   </header>
-
   <section>
     <h2 id="bio">Welcome</h2>
-
     {{ range $s.intro }}
       <p>{{ . }}</p>
     {{ end }}
-
     <hr>
-
-    <h2 id="workinprogress">Work in Progress</h2>
-
+    <h2 id="research">Research</h2>
     {{ $pid := 1 }}
     {{ range $s.work_in_progress }}
       <h3 style="margin:20px 0 5px;">
         {{ .title }}
       </h3>
-
       {{ if .coauthors }}
         <p style="margin:0 0 5px;">
           (with
@@ -49,25 +39,19 @@
           {{ end }})
         </p>
       {{ end }}
-
       <p style="margin:0 0 5px;">
         <a href="javascript:toggle({{ $pid }})">
           Abstract <span id="pubabslink_{{ $pid }}">▼</span>
         </a>
       </p>
-
       <span id="pubabs_{{ $pid }}" style="display:none;">
         <p class="abstract">{{ .abstract }}</p>
       </span>
-
       {{ $pid = add $pid 1 }}
     {{ end }}
-
     <hr>
-
     <h2 id="teaching">Teaching</h2>
     <h3>{{ $s.teaching.heading }}</h3>
-
     <ul>
       {{ range $s.teaching.items }}
         <li>
@@ -78,18 +62,14 @@
         </li>
       {{ end }}
     </ul>
-
   </section>
-
   <footer></footer>
 </div>
-
 <script>
   function toggle(pid) {
     const abs = document.getElementById("pubabs_" + pid);
     const link = document.getElementById("pubabslink_" + pid);
     if (!abs || !link) return;
-
     if (abs.style.display === "none") {
       abs.style.display = "inline";
       link.textContent = "▲";
