@@ -8,13 +8,13 @@ cv: "/pdf/cv.pdf"
 
 intro:
   - "I’m a PhD candidate in Economics at University of Barcelona (UB)."
-  - "I work on questions in Education, Crime and Public Economics. I study educational settings which affect early life trajectories through exposure to different learning environments."
+  - "I work on questions in Education, Social Mobility and Crime. My research studies how educational settings affect early life trajectories."
 
 links:
-  - label: "Work in Progress"
-    href: "#workinprogress"
+  - label: "Research"
+    href: "research"
   - label: "Teaching"
-    href: "#teaching"
+    href: "teaching"
 
 work_in_progress:
   - title: "From Detention to Prevention: Firm-Based Vocational Education and Crime"
@@ -35,11 +35,12 @@ work_in_progress:
         url: "https://sergiquintana.github.io/"
 
     abstract: >
-      Barcelona’s 2019 admission quotas reserve seats for socioeconomically vulnerable students in each public and charter school. I estimate impacts on school segregation, parental applications, and achievement–parental education gradients using difference in differences and a structural model of school and neighborhood choice. Preliminary results show sizable reductions in segregation as schools converge to quota targets, but higher vulnerable student shares lead to fewer applications.
+      Barcelona’s 2019 admission quotas reserve seats for socioeconomically vulnerable students in each public and charter school. We estimate impacts on school segregation, parental applications, and achievement–parental education gradients using difference in differences and a structural model of school and neighborhood choice. Preliminary results show sizable reductions in segregation as schools converge to quota targets, but higher vulnerable student shares lead to fewer applications.
 
 teaching:
   heading: "UB"
   items:
-    - course: "Introduction to Economics"
+    - course: "Spanish Economics"
       audience: "undergraduate students"
+
       years: "2024–2025"
